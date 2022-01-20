@@ -785,6 +785,19 @@ div#preloader {
 .intro-area {
     position: relative;
     overflow: hidden;
+    flex-grow: column;
+}
+
+.intro-area::after {
+    position: absolute;
+    content: "";
+    background: rgba(12, 12, 12, 0.5);
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    width: 100%;
+    height: 100%;
 }
 
 .display-table {
@@ -994,13 +1007,15 @@ div#preloader {
 /*  5. About area
 /*----------------------------------------*/
 
+
+/* 
 .about-2 {
-    background: url(img/background/ag1.jpg);
+    background: url(img/background/2bg.jpg);
     background-repeat: no-repeat;
     background-size: cover;
-    background-position: top center;
+    background-position: center;
     background-attachment: scroll;
-}
+} */
 
 .about-content {
     background: #062241;
@@ -1046,11 +1061,19 @@ div#preloader {
     border-radius: 50px;
 }
 
+.bg-background-img {}
+
 .about-image {
     position: relative;
     width: 100%;
     height: 100%;
-    min-height: 510px;
+    min-height: 553px;
+    background-image: url('img/background/2bg.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    -o-object-fit: cover;
+    object-fit: cover;
 }
 
 .video-content {
