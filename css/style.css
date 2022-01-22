@@ -146,10 +146,14 @@ ul li i.fa-circle{
     margin-right: 10px;
     color: #007cff;
 }
-ul.mission-item li {
+ul.mission-item li,
+ul.objective-item {
 	padding: 5px 0;
 	font-weight: 1;
 	font-size: 18px;
+}
+ul.objective-item li{
+    font-size: 16px;
 }
 
 h2 {
